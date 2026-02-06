@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-universe: #030014;
+    --color-nebula: #7042f88b;
+    --color-cyan: #00f3ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030014;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    /* Hyper-Realistic Universe Background */
+    background-image:
+        radial-gradient(ellipse at top, #1b2735 0%, transparent 100%),
+        radial-gradient(circle at 15% 50%, rgba(112, 66, 248, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.15) 0%, transparent 25%);
+    background-attachment: fixed;
+}
+
+/* Stars Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(rgba(255, 255, 255, 0.8) 1.5px, transparent 1.5px);
+    background-size: 50px 50px, 120px 120px;
+    background-position: 0 0, 40px 60px;
+    opacity: 0.2;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030014;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2a2a4ae6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a4a7ae6;
+}
+
+@layer utilities {
+    .glass-card {
+        @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_8px_32px_0_rgba(31, 38, 135, 0.37)];
+    }
+
+    .text-glow {
+        text-shadow: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.3);
+    }
+
+    .animate-gradient-x {
+        animation: gradient-x 3s ease infinite;
+    }
+}
+
+@keyframes gradient-x {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
