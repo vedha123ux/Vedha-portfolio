@@ -29,7 +29,7 @@ export default function Hero() {
                     <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-white/20 p-1 bg-white/5 backdrop-blur-sm shadow-[0_0_30px_rgba(255,255,255,0.1)]">
                         <img
                             src="/profile-pic.png"
-                            alt="Vedha Dharshini"
+                            alt="Vedha Dharshini R"
                             className="w-full h-full rounded-full object-cover"
                         />
                     </div>
@@ -62,7 +62,7 @@ export default function Hero() {
                             VEDHA
                         </span>
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-300 pb-2">
-                            DHARSHINI
+                            DHARSHINI R
                         </span>
                     </motion.h1>
 

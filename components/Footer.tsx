@@ -32,7 +32,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="text-center md:text-left">
                         <h2 className="text-2xl font-bold text-white mb-2 font-outfit tracking-wide">
-                            VEDHA <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-cyan">DHARSHINI</span>
+                            VEDHA <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-cyan">DHARSHINI R</span>
                         </h2>
                         <p className="text-gray-400 text-sm">
                             Architecting the digital future, one line of code at a time.
@@ -73,7 +73,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <div className="flex items-center gap-2 text-sm text-gray-500">
-                        <span>© 2026 Vedha Dharshini. Made with</span>
+                        <span>© 2026 Vedha Dharshini R. Made with</span>
                         <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" />
                         <span>in React & Next.js.</span>
                     </div>
